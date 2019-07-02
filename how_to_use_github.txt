@@ -1,0 +1,18 @@
+The folder in your computer should be Aquaholics_Anonymous (without master)
+Inside that, you should have readme file and the Topmodel_with_physics folder
+If you don't see the above, change (move, rename, etc.)
+
+Know your username and password. If you dont remember the password go to github and change it.
+Open a terminal (Anaconda Prompt works, Command Prompt, etc.)
+
+Commands:
+git pull     to get updated files from repo onto your pc
+
+git status   to know what you have to do
+
+git add -a   to add (all) new files to the repo
+git add pathofyourfile to add a specific file/path
+
+git commit -A -m "write your message here"   to commit your changes
+
+git push     to push the changes to the repo
