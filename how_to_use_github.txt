@@ -17,3 +17,5 @@ git add pathofyourfile to add a specific file/path
 git commit -A -m "write your message here"   to commit your changes
 
 git push     to push the changes to the repo
+
+git reset --hard HEAD^   to undo the last commit
