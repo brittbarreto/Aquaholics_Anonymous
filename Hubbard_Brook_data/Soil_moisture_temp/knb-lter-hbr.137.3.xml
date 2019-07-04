@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-hbr.137.3" scope="system"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd http://www.xml-cml.org/schema/stmml-1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.0/stmml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>
+      uid=HBR,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>hbr0137</alternateIdentifier>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/7409e6255a71e18f6d0c4b726f68b65f</alternateIdentifier>
+    <shortName>Soil moisture and temperature gradient</shortName>
+    <title>Soil moisture and temperature along an elevation
+    gradient at the Hubbard Brook Experimental Forest, 2010 -
+    present.</title>
+    <creator>
+      <individualName>
+        <givenName>Peter M.</givenName>
+        <surName>Groffman</surName>
+      </individualName>
+      <organizationName>Cary Institute of Ecosystem
+      Studies</organizationName>
+      <address>
+        <deliveryPoint>Box AB</deliveryPoint>
+        <city>Millbrook</city>
+        <administrativeArea>NY</administrativeArea>
+        <postalCode>12545</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(845) 677-5343</phone>
+    </creator>
+    <metadataProvider>
+      <organizationName>Hubbard Brook Experimental Forest
+      LTER</organizationName>
+      <address>
+        <deliveryPoint>234 Mirror Lake Road</deliveryPoint>
+        <city>North Woodstock</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03262</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603) 726-8902</phone>
+      <onlineUrl>http://www.hubbardbrook.org</onlineUrl>
+    </metadataProvider>
+    <associatedParty>
+      <individualName>
+        <givenName>Jorge</givenName>
+        <surName>Duran</surName>
+      </individualName>
+      <role>associated researcher</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Jennifer L.</givenName>
+        <surName>Morse</surName>
+      </individualName>
+      <role>associated researcher</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Donald C.</givenName>
+        <surName>Buso</surName>
+      </individualName>
+      <role>associated researcher</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Tammy</givenName>
+        <surName>Wooster</surName>
+      </individualName>
+      <role>associated researcher</role>
+    </associatedParty>
+    <pubDate>2015</pubDate>
+    <abstract>
+      <para>Soil temperature and soil moisture have been measured
+      at multiple locations at the Hubbard Brook Experimental
+      Forest (HBEF), as part of a study of the relationships
+      between snow depth, soil freezing and nutrient cycling
+      (http://www.ecostudies.org/people_sci_groffman_snow_summary.html). 
+      In October 2010, we established 6, 20 x 20-m plots (intensive
+      plots) and 14 10 x 10-m plots (extensive plots) along an
+      elevation gradient, with eight of the plots on north-facing
+      slopes and twelve on south-facing slopes. Soil temperature
+      and soil moisture were measured at hourly intervals on these
+      plots beginning in November 2010. Six locations were
+      discontinued in September 2012 (E04, E05, E06, E11-B, E13,
+      and E14).</para>
+      <para>These data were gathered as part of the Hubbard Brook
+      Ecosystem Study (HBES). The HBES is a collaborative effort at
+      the Hubbard Brook Experimental Forest, which is operated and
+      maintained by the USDA Forest Service, Northern Research
+      Station.</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">forests</keyword>
+      <keyword keywordType="theme">gradient</keyword>
+      <keyword keywordType="place">HBEF snow gradient
+      study</keyword>
+      <keyword keywordType="place">HBR</keyword>
+      <keyword keywordType="place">Hubbard Brook LTER</keyword>
+      <keyword keywordType="theme">nutrient cycling</keyword>
+      <keyword keywordType="theme">soil</keyword>
+      <keyword keywordType="theme">soil moisture</keyword>
+      <keyword keywordType="theme">soil temperature</keyword>
+      <keywordThesaurus>Hubbard Brook Ecosystem Study
+      LTER</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">disturbance</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons
+      license - Attribution - CC BY
+      (https://creativecommons.org/licenses/by/4.0/). The consumer
+      of these data ("Data User" herein) is required to cite it
+      appropriately in any publication that results from its use.
+      The Data User should realize that these data may be actively
+      used by others for ongoing research and that coordination may
+      be necessary to prevent duplicate publication. The Data User
+      is urged to contact the authors of these data if any
+      questions about methodology or results occur. Where
+      appropriate, the Data User is encouraged to consider
+      collaboration or co-authorship with the authors. The Data
+      User should realize that misinterpretation of data may occur
+      if used out of context of the original study.</para>
+      <para>While substantial efforts are made to ensure the
+      accuracy of data and associated documentation, complete
+      accuracy of data sets cannot be guaranteed. All data are made
+      available "as is." The Data User should be aware, however,
+      that data are updated periodically and it is the
+      responsibility of the Data User to check for new versions of
+      the data. The data authors and the repository where these
+      data were obtained shall not be liable for damages resulting
+      from any use or misinterpretation of the data. Thank
+      you.</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url>
+        http://data.hubbardbrook.org/data/dataset.php?id=137</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>E1: Extensive Plot 1. Aspect: North.
+        UTM: X=277410, Y=4867546</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.77291084</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.77291084</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.92738579</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.92738579</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>588</altitudeMinimum>
+            <altitudeMaximum>588</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E2: Extensive Plot 2. Aspect: North.
+        UTM: X= 277111, Y= 4867074</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.77643367</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.77643367</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.92305067</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.92305067</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>687</altitudeMinimum>
+            <altitudeMaximum>687</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E3: Extensive Plot 3. Aspect: North.
+        UTM: X= 276485, Y= 4850906</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.77745584</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.77745584</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.91985666</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.91985666</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>770</altitudeMinimum>
+            <altitudeMaximum>770</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E4: Extensive Plot 4. Aspect: North.
+        UTM: X= 277986, Y= 4867455</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.76570567</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.76570567</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.92674122</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.92674122</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>632</altitudeMinimum>
+            <altitudeMaximum>632</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E5: Extensive Plot 5. Aspect: North.
+        UTM: X= 278055, Y= 4866940</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.76463237</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.76463237</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.92213059</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.92213059</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>724</altitudeMinimum>
+            <altitudeMaximum>724</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E6: Extensive Plot 6. Aspect: North.
+        UTM: X= 281632, Y= 4870329</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.72151804</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.72151804</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95368099</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95368099</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>536</altitudeMinimum>
+            <altitudeMaximum>536</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E7: Extensive Plot 7. Aspect: South.
+        UTM: UTM: X= 281869, Y= 4870458</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.71862125</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.71862125</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95490408</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95490408</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>609</altitudeMinimum>
+            <altitudeMaximum>609</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E8: Extensive Plot 8. Aspect: South.
+        UTM: X= 281785, Y= 4870899</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.71984434</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.71984434</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95885229</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95885229</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>630</altitudeMinimum>
+            <altitudeMaximum>630</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E9: Extensive Plot 9. Aspect: South.
+        UTM: X= 281650, Y= 4871108</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.72161276</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.72161276</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.96068944</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.96068944</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>670</altitudeMinimum>
+            <altitudeMaximum>670</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E10: Extensive Plot 10. Aspect:
+        South. UTM: X= 281068, Y= 4870840</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.72874928</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.72874928</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95810127</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95810127</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>698</altitudeMinimum>
+            <altitudeMaximum>698</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E11: Extensive Plot 11. Abandonded
+        in Fall 2011 and replaced with 11-B. Aspect: South. UTM: X=
+        279820, Y= 4870325</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.74407265</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.74407265</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95310239</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95310239</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>706</altitudeMinimum>
+            <altitudeMaximum>706</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E11-B: Extensive Plot 11-B.
+        Replacement for E11 started in Fall 2011. Aspect: South.
+        UTM: X= 279957, Y= 4870590</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.74247222</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.74247222</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95552778</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95552778</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>766</altitudeMinimum>
+            <altitudeMaximum>766</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E12: Extensive Plot 12. Aspect:
+        South. UTM: X= 290093, Y= 4870317</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.74066667</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.74066667</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95311111</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95311111</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>688</altitudeMinimum>
+            <altitudeMaximum>688</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E13: Extensive Plot 13. Aspect:
+        South. UTM: X= 280252, Y= 4870034</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.73857446</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.73857446</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95061447</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95061447</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>601</altitudeMinimum>
+            <altitudeMaximum>601</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>E14: Extensive Plot 14. Aspect:
+        South. UTM: X= 281277, Y= 4870177</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.72587194</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.72587194</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95220301</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95220301</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>487</altitudeMinimum>
+            <altitudeMaximum>487</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IH1: Intensive High Elevation Plot
+        1. Aspect: North. UTM: X= 277790, Y=
+        4868286</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.7684914</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.7684914</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.93415543</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.93415543</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>539</altitudeMinimum>
+            <altitudeMaximum>539</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IH2: Intensive High Elevation Plot
+        2. Aspect: North. UTM: X= 277888, Y=
+        4868064</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.76717913</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.76717913</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.93218854</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.93218854</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>555</altitudeMinimum>
+            <altitudeMaximum>555</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IH3: Intensive High Elevation Plot
+        3. Aspect: North. UTM: X= 278314, Y=
+        4867892</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.76180633</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.76180633</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.93077007</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.93077007</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>595</altitudeMinimum>
+            <altitudeMaximum>595</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IL1: Intensive Low Elevation Plot 1.
+        Aspect: South. UTM: X= 282144, Y=
+        4869478</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.71479424</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.71479424</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.94617659</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.94617659</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>375</altitudeMinimum>
+            <altitudeMaximum>375</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IL2: Intensive Low Elevation Plot 2.
+        Aspect: South. UTM: X= 281685, Y=
+        4869704</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.72060047</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.72060047</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.94807308</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.94807308</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>401</altitudeMinimum>
+            <altitudeMaximum>401</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>IL3: Intensive Low Elevation Plot 3.
+        Aspect: South. UTM: X= 280887, Y=
+        4869966</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>
+          -71.73064174</westBoundingCoordinate>
+          <eastBoundingCoordinate>
+          -71.73064174</eastBoundingCoordinate>
+          <northBoundingCoordinate>
+          43.95019236</northBoundingCoordinate>
+          <southBoundingCoordinate>
+          43.95019236</southBoundingCoordinate>
+          <boundingAltitudes>
+            <altitudeMinimum>511</altitudeMinimum>
+            <altitudeMaximum>511</altitudeMaximum>
+            <altitudeUnits>meter</altitudeUnits>
+          </boundingAltitudes>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2010-11-17</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2013-05-09</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <positionName>Information Manager, Hubbard Brook
+      LTER</positionName>
+      <address>
+        <deliveryPoint>234 Mirror Lake Road</deliveryPoint>
+        <city>North Woodstock</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03262</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603) 726-8902</phone>
+      <electronicMailAddress>
+      hbr-im@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.hubbardbrook.org</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Hubbard Brook Experimental Forest
+      LTER</organizationName>
+      <address>
+        <deliveryPoint>234 Mirror Lake Road</deliveryPoint>
+        <city>North Woodstock</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03262</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603) 726-8902</phone>
+      <onlineUrl>http://www.hubbardbrook.org</onlineUrl>
+    </publisher>
+    <pubPlace>Hubbard Brook LTER</pubPlace>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>LOCATION DESCRIPTION</title>
+            <para>Soil temperature and soil moisture have been
+            measured at multiple locations at the Hubbard Brook
+            Experimental Forest (HBEF), as part of a study of the
+            relationships between snow depth, soil freezing and
+            nutrient cycling
+            (http://www.ecostudies.org/people_sci_groffman_snow_summary.html).
+            In October 2010, we established 6 20 x 20-m plots
+            (intensive plots) and 14 10 x 10-m plots (extensive
+            plots) along an elevation gradient, with eight of the
+            plots on north-facing slopes and twelve on south-facing
+            slopes. Soil temperature and soil moisture were
+            measured at hourly intervals on these plots beginning
+            in November 2010. Six locations were discontinued in
+            September 2012 (E04, E05, E06, E11-B, E13, and
+            E14).</para>
+          </section>
+          <section>
+            <title>DATA DESCRIPTION</title>
+            <para>In each plot, we installed two replicate Decagon
+            soil moisture and temperature probes (Model 5TM) to 5
+            cm depth. Decagon 5TM probes record soil moisture as
+            volumetric water content (VWC; reported as % based on
+            m3/m3) calculated using the Topp et al. (1980; Equation
+            1) from apparent dielectric permittivity (Ɛa) ranging
+            from 1 in air to 80 in water (Decagon Devices 2010).
+            The probes have a resolution of 0.08% VWC from 0-50%
+            VWC and an accuracy of ± 3% in typical mineral soils
+            with solution electrical conductivity less than 10 dS/m
+            and ± 15% from 40-80% VWC. The temperature range is
+            from -40 to 50 oC, with a resolution of 0.1 oC and an
+            accuracy of 1 oC. Measurements were recorded hourly
+            using a Decagon Em50 datalogger (14 extensive plots) or
+            Campbell Scientific datalogger (6 intensive plots). We
+            used linear regressions to data from nearby
+            installations for periods that preceded and followed
+            the missing data, to fill gaps in the data sets.
+            Outliers were excluded before calculating the hourly
+            mean of the two probes for each plot.</para>
+            <para>Equation 1: VWC = 4.3x10-6 . Ɛa 3 - 5.5x10-4 . Ɛa
+            2 + 2.92x10-2 . Ɛa - 5.3x10-2</para>
+          </section>
+        </description>
+        <citation>
+          <title>5TM Operator’s Manual</title>
+          <creator>
+            <individualName>
+              <surName>Decagon Devices</surName>
+            </individualName>
+          </creator>
+          <pubDate>2010</pubDate>
+          <report>
+            <publisher>
+              <organizationName>
+              http://www.decagon.com/assets/Manuals/Manual-5TM.pdf</organizationName>
+            </publisher>
+            <publicationPlace>Pullman, WA</publicationPlace>
+          </report>
+        </citation>
+        <citation>
+          <title>Electromagnetic Determination of Soil Water
+          Content: Measurement in Coaxial Transmission
+          Lines</title>
+          <creator>
+            <individualName>
+              <givenName>G.C.</givenName>
+              <surName>Topp</surName>
+            </individualName>
+          </creator>
+          <creator>
+            <individualName>
+              <givenName>J.L.</givenName>
+              <surName>David</surName>
+            </individualName>
+          </creator>
+          <creator>
+            <individualName>
+              <givenName>A.P.</givenName>
+              <surName>Annan</surName>
+            </individualName>
+          </creator>
+          <pubDate>1980</pubDate>
+          <article>
+            <journal>Water Resources Research</journal>
+            <volume>16</volume>
+            <issue>3</issue>
+            <pageRange>574-582</pageRange>
+          </article>
+        </citation>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>snowgrad_soil</entityName>
+      <entityDescription>Soil moisture and temperature along an
+      elevation gradient. Volumetric water content is reported as
+      percent, calculated as cubic meter of water per cubic meter
+      of soil</entityDescription>
+      <physical>
+        <objectName>snowgrad_soil.txt</objectName>
+        <characterEncoding>ASCII</characterEncoding>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>0x2c</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-hbr/137/3/d9650a9ef340a2f281614067c7033732</url>
+          </online>
+          <access
+            authSystem="https://pasta.edirepository.org/authentication"
+            order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+            <allow>
+              <principal>
+              uid=HBR,o=LTER,dc=ecoinformatics,dc=org</principal>
+              <permission>all</permission>
+            </allow>
+            <allow>
+              <principal>public</principal>
+              <permission>read</permission>
+            </allow>
+          </access>
+        </distribution>
+      </physical>
+      <additionalInfo>
+        <section>
+          <title>NOTES ON DATA</title>
+          <para>Interested parties are free to use these data for
+          informational purposes but they cannot be used in any
+          publication without permission of the author. The data is
+          physically located at the Cary Institute of Ecosystem
+          Studies in Millbrook, NY and was updated in March
+          2013.</para>
+        </section>
+      </additionalInfo>
+      <attributeList>
+        <attribute>
+          <attributeName>Coll_Date_Time</attributeName>
+          <attributeDefinition>Sample collection date and
+          time</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD-TT:TT</formatString>
+              <dateTimePrecision>1 hour</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">2010-10-10</minimum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>E01_VWC</attributeName>
+          <attributeDefinition>Extensive plot 1, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E02_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 2, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E03_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 3, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E04_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 4, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E05_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 5, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E06_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 6, Volumetric Water
+          Content, percent</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E07_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 7, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E08_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 8, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E09_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 9, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E10_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 10, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E11_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 11, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E1B_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 11B, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E12_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 12, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E13_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 13, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E14_VWC</attributeName>
+          <attributeDefinition>Extensive Plot 14, Volumetric Water
+          Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH1_VWC</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 1,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH2_VWC</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 2,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH3_VWC</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 3,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL1_VWC</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 1,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL2_VWC</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 2,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL3_VWC</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 3,
+          Volumetric Water Content</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E01_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 1, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E02_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 2, mean hourly soil
+          temperature, (percent)</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E03_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 3, mean hourly soil
+          temperature, percent</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E04_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 4, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E05_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 5, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E06_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 6, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E07_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 7, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E08_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 8, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E09_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 9, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E10_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 10, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E11_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 11, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E1B_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 11B, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E12_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 12, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E13_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 13, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E14_SoilTemp</attributeName>
+          <attributeDefinition>Extensive Plot 14, mean hourly soil
+          temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH1_SoilTemp</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 1,
+          mean hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH2_SoilTemp</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 2,
+          mean hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IH3_SoilTemp</attributeName>
+          <attributeDefinition>Intensive High Elevation Plot 3,
+          mean hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL1_SoilTemp</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 1, mean
+          hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL2_SoilTemp</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 2, mean
+          hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IL3_SoilTemp</attributeName>
+          <attributeDefinition>Intensive Low Elevation Plot 3, mean
+          hourly soil temperature</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>celcius</customUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>Data missing or not taken at this
+            time</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList>
+        <stmml:unit abbreviation="" id="celcius" name="celcius" unitType="">
+          <stmml:description>unit of
+          temperature</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

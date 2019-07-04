@@ -1,0 +1,5 @@
+Manifest file for archive_knb-lter-hbr.137.3_156218669645089672.zip created on Wed Jul 03 14:44:56 MDT 2019
+snowgrad_soil.txt (5634405 bytes)
+knb-lter-hbr.137.3.xml (63287 bytes)
+knb-lter-hbr.137.3.txt (25015 bytes)
+knb-lter-hbr.137.3.report.xml (30304 bytes)
