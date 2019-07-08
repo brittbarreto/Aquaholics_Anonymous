@@ -1,5 +1,0 @@
-Manifest file for archive_knb-lter-hbr.13.12_156218649911437772.zip created on Wed Jul 03 14:41:39 MDT 2019
-dailyGagePrecip1956-2019.csv (8542649 bytes)
-knb-lter-hbr.13.12.xml (13605 bytes)
-knb-lter-hbr.13.12.txt (8583 bytes)
-knb-lter-hbr.13.12.report.xml (31966 bytes)

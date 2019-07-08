@@ -36,13 +36,17 @@ image(hubbard_topidx)
 ```{r}
 rainfall <- runif(240,0,0)
 etp <- runif(240,0,0)
-print(dem[400:520,860])
-#218,860
 hubbard_flowlength <- flowlength(dem,c(218,860))
 hubbard_drainagearea <- topidx(dem, 10)$area
+hubbard_flowlength_vector <- as.vector(hubbard_flowlength)
+if_na(hubbard_flowlength_vector, label=NULL) <- 9999
+head(hubbard_flowlength_vector)
+hubbard_flowlength_vector[is.na(hubbard_flowlength_vector)] <- 0
+hubbard_drainagearea_vector <- as.vector(hubbard_drainagearea)
+hubbard_drainagearea_vector[is.na(hubbard_drainagearea_vector)] <- 0
 
-image(hubbard_flowlength)
-hubbard_delay <- delay(dem)
+hubbard_delay<- cbind(hubbard_drainagearea_vector, hubbard_flowlength_vector)
+head(hubbard_flowlength)
 
 #define parameters
 n <- 1
@@ -61,7 +65,7 @@ CD <- runif(n, min=0, max=5)
 dt <- 1.0
 
 parameters <- cbind(qs0,lnTe,m,Sr0,SrMax,td,vch,vr,k0,CD,dt)
-hubbard_qsim <- topmodel(parameters, hubbard_topidx, delay, rainfall, etp)
+hubbard_qsim <- topmodel(parameters, hubbard_topidx, hubbard_delay, rainfall, etp)
 
 
 

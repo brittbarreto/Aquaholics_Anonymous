@@ -1,5 +1,0 @@
-Manifest file for archive_knb-lter-hbr.2.9_156218720149747195.zip created on Wed Jul 03 14:53:21 MDT 2019
-HBEF_DailyStreamflow_1956-2017_longform.csv (3984674 bytes)
-knb-lter-hbr.2.9.xml (18277 bytes)
-knb-lter-hbr.2.9.txt (10609 bytes)
-knb-lter-hbr.2.9.report.xml (32008 bytes)

@@ -1,0 +1,350 @@
+
+  
+    
+      uid=HBR,o=LTER,dc=ecoinformatics,dc=org
+      all
+    
+    
+      public
+      read
+    
+  
+  
+    knb-lter-hbr.13
+    doi:10.6073/pasta/c9dc21212a3af50216f2db706f059714
+    Precipitation Daily by Gage
+    Hubbard Brook Experimental Forest: Daily Precipitation Standard Rain Gage Measurements, 1956 - present
+    
+       USDA Forest Service, Northern Research Station
+    
+    2019-05-16
+    English
+    
+      
+  Precipitation has been measured using rain gauges located in or around
+  each watershed since 1956. Three types of rain gauges have been used:
+  standard, mechanical weight recording, and electronic weight
+  recording. Between 1956 and 2014, precipitation was measured weekly at
+  standard gages located at 24 stations in or near gaged watersheds and
+  at the headquarters building. Weight-recording gages were located at 7
+  of the 24 stations and capture a continuous strip-chart record. Weekly
+  totals were prorated using daily totals from the nearest recording
+  gage. Beginning in 2011, electronic weighing rain gauges began being
+  implemented to measure 15-minute precipitation. The number of
+  precipitation stations was reduced to 10, when each station was fully
+  converted to an electronic gauge for measuring 15-minute and daily
+  precipitation beginning in 2015 (Green et al. 2018).
+
+      
+  These data were gathered as part of the Hubbard Brook Ecosystem Study
+  (HBES). The HBES is a collaborative effort at the Hubbard Brook
+  Experimental Forest, which is operated and maintained by the USDA
+  Forest Service, Northern Research Station.
+
+      
+  Green, M.B., Campbell, J.L., Yanai, R.D., Bailey, S.W., Bailey, A.S.,
+  Grant, N., Halm, I., Kelsey, E.P. and Rustad, L.E., 2018. Downsizing a
+  long-term precipitation network: Using a quantitative approach to
+  inform difficult decisions. PLoS one,
+  13(5), p.e0195966.
+
+    
+    
+      gage
+      gauge
+      HBR
+      Hubbard Brook LTER
+      Hubbard Brook Ecosystem Study
+    
+    
+      ecosystems
+      forests
+      precipitation
+      rain
+      watersheds
+      LTER Network Controlled Vocabulary
+    
+    
+      disturbance
+      LTER Network Core Research Areas
+    
+    
+      
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data ("Data User" herein) is required
+  to cite it appropriately in any publication that results from its use.
+  The Data User should realize that these data may be actively used by
+  others for ongoing research and that coordination may be necessary to
+  prevent duplicate publication. The Data User is urged to contact the
+  authors of these data if any questions about methodology or results
+  occur. Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study.
+
+      
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. All data are made available "as is." The Data
+  User should be aware, however, that data are updated periodically and
+  it is the responsibility of the Data User to check for new versions of
+  the data. The data authors and the repository where these data were
+  obtained shall not be liable for damages resulting from any use or
+  misinterpretation of the data. Thank you.
+
+    
+    
+      
+        Hubbard Brook Experimental Forest
+        
+          -71.8062
+          -71.7022
+          43.959
+          43.914
+        
+      
+      
+        
+          
+            1956-01-01
+          
+          
+            2019-02-04
+          
+        
+      
+    
+    
+      Hubbard Brook Ecosystem Study
+      Information Manager
+      			234 Mirror Lake Road
+			North Woodstock, NH 03262  United States
+      hbr-im@lternet.edu
+      https://hubbardbrook.org
+    
+    
+      Hubbard Brook Ecosystem Study
+      			234 Mirror Lake Road
+			North Woodstock, NH 03262  United States
+    
+    
+      
+        
+          
+  SAMPLING DESIGN
+
+          
+  Between 1956 and 2014, precipitation was measured at Hubbard Brook by
+  a network of 7 weighing recording rain gages (RRG) and 24 standard
+  rain gauges (SRG). During winter months (Nov-Mar) all gauges were
+  charged with antifreeze and operated with funnels removed. All rain
+  gauges were in clearings maintained to uniform standards with all
+  trees beyond a 40-degree angle measured from the base of the rain
+  gauge removed. Each rain gauge was equipped with Altar windshields to
+  reduce wind effects. Rain gauges were mounted on stands at least 4
+  feet above the ground to avoid being buried by snow in the winter.
+
+          
+  The analog charts on the recording rain gauges were changed
+  approximately weekly, at which time the accumulation in the standard
+  gages was measured. The daily recording rain gage data and weekly
+  standard rain gage data were entered into the computer. Missing data
+  were filled by estimation from other nearby gages. A computer program
+  used the recording rain gage data to prorate the standard rain gage
+  data into daily amounts. The final standard rain gage data are
+  reported here.
+
+          
+  Beginning in 2011, electronic weighing rain gauges began being phased
+  into operations for measuring 15-minute precipitation. In 2015, daily
+  precipitation was summed at only 10 sites, which were instrumented
+  with electronic gauges. All other sites were discontinued.
+
+          
+  PRECIPITATION COLLECTOR DISTRIBUTION
+
+          
+  Standard rain gages were located in the watersheds as follows:
+
+          
+  Watershed 1: SRG 1, 2, 3
+
+          
+  Watershed 2: SRG 18 (1986-1975)
+
+          
+  Watershed 3: SRG 4, 5
+
+          
+  Watershed 4: SRG 6, 7, 8
+
+          
+  Watershed 6: SRG 9, 10, 11
+
+          
+  Watershed 7: SRG 12, 13, 14, 15, 16
+
+          
+  Watershed 8: SRG 17, 19, 20, 21
+
+          
+  Watershed 9: SRG 23, 24, 25
+
+          
+  Headquarters: SRG 22
+
+          
+  Standard rain gages associated with recording rain gages (RRG)
+
+          
+  The RRG were used to prorate weekly standard rain gage measurements to
+  calculate daily precipitation values. Raw RRG data are not presented
+  in this data set.
+
+          
+  RRG 1 – SRG 1, 2, 4, 7, 8
+
+          
+  RRG 6 – SRG 3, 5, 6
+
+          
+  RRG 10 – SRG 9, 10, 11
+
+          
+  RRG 14 – SRG 12, 13, 14, 15, 16, 17
+
+          
+  RRG 19 – SRG 19, 20, 21
+
+          
+  RRG 22 – SRG 22
+
+          
+  RRG 23 – SRG 23, 24, 25
+
+          
+  PRECIPITATION COLLECTION PERIODS
+
+          
+  The following list includes the start date for the data collected from
+  each standard can rain gage. Collections with standard rain gauges
+  ceased at the end of the 2014 calendar year.
+
+          
+  SRG 1, 2, 3 -- 1956-01-01
+
+          
+  SRG 4 -- 1956-08-01
+
+          
+  SRG 5 -- 1957-11-01
+
+          
+  SRG 6, 7, 8 -- 1960-01-01
+
+          
+  SRG 9, 10, 11 -- 1963-12-01
+
+          
+  SRG 12, 13, 14, 15, 16, 17 -- 1965-01-01
+
+          
+  SRG 18 -- 1968-01-01 to 1975-06-28
+
+          
+  SRG 19 -- 1968-11-01
+
+          
+  SRG 20, 21 -- 1968-09-01
+
+          
+  SRG 22 -- 1978-01-01
+
+          
+  SRG 23 -- 1996-01-01
+
+          
+  SRG 24, 25 -- 1997-01-05
+
+        
+      
+    
+    
+      dailyGagePrecip1956-2019.csv
+      Daily Raingage Precipitation
+      
+        dailyGagePrecip1956-2019.csv
+        8542649
+        ee66ea1946450c2f5eafda1651873de0
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-hbr/13/12/efb7d954dab0cd250e0dcd08292315d5
+          
+        
+      
+      
+        
+          DATE
+          DATE
+          Date
+          date
+          
+            
+              YYYY-MM-DD
+            
+          
+        
+        
+          rainGage
+          rainGage
+          rainGageID
+          string
+          
+            
+              
+                
+                  Number 1-9
+                
+              
+            
+          
+        
+        
+          Precip
+          Precip
+          Precipitation
+          float
+          
+            
+              
+                millimeterPerDay
+              
+              
+                real
+              
+            
+          
+        
+      
+      436908
+    
+  
+  
+    
+      
+        
+      
+    
+  
