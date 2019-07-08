@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561995335683.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1096655720",
+    "id" : "4ABE784E",
+    "lastKnownWriteTime" : 1562191033,
+    "last_content_update" : 1562191033510,
+    "path" : "C:/summer_institute_2019/Scaling_theme/R_Files/TOPMODEL/TOPMODEL.R",
+    "project_path" : "TOPMODEL.R",
+    "properties" : {
+        "cursorPosition" : "74,4",
+        "scrollLine" : "70",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

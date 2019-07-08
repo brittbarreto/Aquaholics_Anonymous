@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1562190085929.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E6439510",
+    "lastKnownWriteTime" : 140686765260816,
+    "last_content_update" : 1562190085929,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "EE156733",
+        "caption" : "hubbard_topidx_big_withdem",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=hubbard_topidx_big_withdem&cache_key=EE156733",
+        "displayedObservations" : 520,
+        "environment" : "",
+        "expression" : "hubbard_topidx_big_withdem",
+        "object" : "hubbard_topidx_big_withdem",
+        "preview" : 0,
+        "totalObservations" : 520,
+        "variables" : 860
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
