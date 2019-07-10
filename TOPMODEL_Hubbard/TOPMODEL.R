@@ -4,7 +4,6 @@ library(Hmisc)
 library(tiff)
 library(raster)
 library(rgdal)
-library(gdata)
 
 data(huagrahuma)
 data(huagrahuma.dem)
@@ -12,11 +11,16 @@ attach(huagrahuma)
 ##getwd("C:/summer_institute_2019/Scaling_theme/R_Files/TOPMODEL/")
 raster<-'hubbard_clipped.tif'
 dem <-raster(raster)
-plot(dem)
-
 dem <-as.matrix(dem)
 is.na(dem)
-new_dem=remove.na(dem, iftell = TRUE)
+#new_dem=remove.na(dem, iftell = TRUE)
+
+raster2<-'topidx_hubbard_madeinGIS.tif'
+dem2 <-raster(raster2)
+plot(dem2)
+dem2 <-as.matrix(dem2)
+is.na(dem2)
+#new_dem2=remove.na(dem2, iftell = TRUE)
 
 ##creek_topoindex_atb<-topidx(dem, 10)$atb
 ##expss::if_na(creek_topoindex_atb, label = NULL) <- 9999
@@ -46,42 +50,49 @@ new_dem=remove.na(dem, iftell = TRUE)
 hubbard_raster<-raster("hubbard_clipped.tif")
 plot(hubbard_raster)
 
-##hubbard_tiff<-readTIFF("hubbard_clipped.tif")
-##image(hubbard_tiff)
+#GIS_topoidx<-raster("topidx_hubbard_madeinGIS.tif")
+#plot(GIS_topoidx)
 
-#hubbard_topidx_big<-topidx(hubbard_tiff, 10)$atb
-hubbard_topidx_big_withdem<-topidx(dem, 10)$atb
+#dem_sink<- sinkfill(dem, 10, degree=0.1)
 
-#hubbard_topidx<-make.classes(hubbard_topidx_big, 5)
-hubbard_topidx_withdem<-make.classes(hubbard_topidx_big_withdem, 11)
+hubbard_topidx_wdem1<-topidx(dem, 10)$atb
+#hubbard_topidx_wdem2<-topidx(dem_sink,10)$atb
 
-#hubbard_topidx
-#plot(hubbard_topidx)
+hubbard_topidx_withdem1<-make.classes(hubbard_topidx_wdem1, 11)
+#hubbard_topidx_withdem2<-make.classes(hubbard_topidx_wdem2,22)
+#hubbard_topidx_withGIS<-make.classes(dem2, 12)
 
-hubbard_topidx_withdem
-plot(hubbard_topidx_withdem)
+hubbard_topidx_withdem1
+#hubbard_topidx_withdem2
+#hubbard_topidx_withGIS
+plot(hubbard_topidx_withdem1)
+#plot(hubbard_topidx_withdem2)
+#plot(hubbard_topidx_withGIS)
 
 hubbard_data<-read.csv("2016_hubbert_precip.csv")
-hubbard_rain_mm<-hubbard_data$ï..Precip_2016_mm
-hubbard_rain_m<-hubbard_data$ï..Precip_2016_m
+hubbard_rain_mm<-hubbard_data$..Precip_2016_mm
+hubbard_rain_m<-hubbard_data$..Precip_2016_m
 hubbard_flow_ls<-hubbard_data$Streamflow_l.s
+hubbard_flow_ls
 hubbard_flow_m3d<-hubbard_data$Streamflow_m3.day
+hubbard_flow_m3d
+simple_rain<-runif(365,0,0)
 
 delay
 k<-10
 hubbard_delay_flowlength<-flowlength(dem)*10
 hubbard_delay_class<-make.classes(hubbard_delay_flowlength,k)
 hubbard_delay_class
-plot(hubbard_delay_class)
 hubbard_delay_classorder<- hubbard_delay_class[k:1,]
-hubbard_delay_classorder
+plot(hubbard_delay_classorder)
 hubbard_delay_classorder[,2] <- c(0, cumsum(hubbard_delay_classorder[1:(k-1),2]))
 hubbard_delay_classorder
 
-##dem[217,858]
+#hubbard_sim2<-topmodel(parameters, hubbard_topidx_withGIS, hubbard_delay_classorder, hubbard_rain_mm, ETp)
+hubbard_sim<-topmodel(parameters, hubbard_topidx_withdem1, delay, hubbard_rain_mm, ETp)
 
-hubbard_sim<-topmodel(parameters, hubbard_topidx_withdem, hubbard_delay_classorder, hubbard_rain_mm, ETp)
 plot(hubbard_sim, type="l", col="blue", main="2016 Daily Flow for Hubbard Creek", xlab="Days", ylab="Flow")
+lines(hubbard_sim2)
 points(hubbard_flow_ls)
 legend("topright", legend=c("modeled", "observed"),
        col=c("blue", "black"), lty=1, cex=0.9)
@@ -93,7 +104,7 @@ points(Qobs)
 
 n <- 1
 
-qs0 <- runif(n, min = 0.0001, max = 0.00025)
+qs0 <- runif(n, min = 1.141, max = 1.141)
 lnTe <- runif(n, min = -2, max = 1.5)
 m <- runif(n, min = 0.05, max = 0.05)
 Sr0 <- runif(n, min = 0, max = 0.15)
