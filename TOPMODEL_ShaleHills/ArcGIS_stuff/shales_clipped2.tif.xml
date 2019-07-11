@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20190708</CreaDate><CreaTime>14503200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\ExtractByMask" Date="20190708" Time="145032">ExtractByMask sh_elev wshd_nad83_edit "C:\Users\Stefany Baron\Desktop\CUAHSI Summer Institute\R files\TOPMODEL_ShaleHills\shales_clipped2.tif"</Process></lineage></DataProperties></Esri></metadata>
