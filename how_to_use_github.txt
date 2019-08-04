@@ -12,10 +12,17 @@ git pull     to get updated files from repo onto your pc
 git status   to know what you have to do
 
 git add -a   to add (all) new files to the repo
-git add pathofyourfile to add a specific file/path
+git add pathofyourfile	to add a specific file/path
+
+git rm pathofyourfile	to remove a file from the repository and from your computer
+git rm --cached pathofyourfile	to remove a file only from the repository, NOT from your computer
+git rm -r pathofyourfolder to remove a folder (only difference with file is -r; you can use --cached -r)	
+
 
 git commit -A -m "write your message here"   to commit your changes
 
 git push     to push the changes to the repo
 
 git reset --hard HEAD^   to undo the last commit
+
+
