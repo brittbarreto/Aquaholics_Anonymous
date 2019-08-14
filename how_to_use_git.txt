@@ -1,0 +1,109 @@
+The folder in your computer should be Aquaholics_Anonymous (without master)
+Inside that, you should have readme file and the folders (Topmodel_with_physics, data, etc)
+If you don't see the above, change (move, rename, etc.)
+
+Know your username and password. If you dont remember the password go to github and change it.
+Open a terminal (Anaconda Prompt works, Command Prompt, etc.)
+Navigate to where the Aquaholics_Anonymous folder is (with cd etc)
+
+Commands:
+git pull     to get updated files from repo onto your pc
+ BUT you must NOT have uncommited changes. Either commit changes or reset, then pull.
+
+git status   	to know what you have to do
+		to know what is tracked and what is untracked
+
+git add filename	add filename, which you modified, to the staging area
+git add -a   		to add (all) new files to the staging area
+git add pathofyourfile	to add a specific file/path
+(if you don't add a file, it will be untracked, git does not see it)
+if you add (stage) a file by mistake, you can unstage with 	git reset HEAD
+
+git rm filename		to remove filename from repo and from your computer
+git rm --cached filename	to remove a file only from repo, NOT from your computer
+git rm -r directory	to remove a folder (only difference with file is -r; you can use --cached -r)	
+
+
+git commit -A -m "write your message here"   to commit (save) your changes in the staging area
+git commit --amend - m "new message"	to overwrite the original message, if you have second thought
+git commit 	without -m for message starts a text editor. Where you can write a longer than one-line message!
+(Using text editor, like nano or vim, can be a nightmare. Please always add message with -m)
+
+git push     to push the changes to the repo
+ You cannot push to the remote if your local repo is not up to date with the remote. This is to avoid
+ overwriting collaborators work
+
+git checkout -- filename	undo changes to filename that are not staged yet (so not even added)
+git reset HEAD filename		this is for unstaging filename after it was staged/added
+(to do undo something already staged, first unstage with reset, then undo with checkout)\
+git checkout hash3 filename	restore filename to previous version with hash hash3
+(btw, this restoring to a previous version becomes a new version, does not delete all the versions after that)
+git reset HEAD directory	to unstage all changes to files in directory
+git reset HEAD	 or 	git reset	to unstage everything currently staged
+git checkout -- directory	to undo all changes to files in directory
+git checkout -- .		to undo all changes to files in current directory
+git reset --hard HEAD^   to undo the last commit
+
+git diff	shows all the changes in the repository (line by line of each file!)
+git diff filename	shows difference between current and last saved version of filename
+git diff directory	shows difference in the files of directory
+git diff -r HEAD	compare current version of files (added? or before adding?) to most recent commit
+git diff hash1..hash2	shows difference between two versions of a file (hash is unique ID of a file version)
+git diff HEAD~1..HEAD~3	shows difference (in repo) between one commit ago and three commits ago 
+
+git log		to see all commits, starting from the most recent
+(press barspace to see older history; press q to exit the log)
+git log filename	to see all committed changes of filename
+git log directory	to see added and removed files in directory
+git log -4 filename	to see the last 4 commits of filename
+
+git show hash	use first few characters of a commit's hash to view commit's details
+git show HEAD	shows details of last commit
+git show HEAD~1	shows details of second-to-last commit
+git show HEAD~2	shows details of third-to-last commit
+
+git annotate filename	shows the history of changes of a file, who modified what and when in that file
+
+git clean -n	lists untracked files, means there is no history of them (never committed)
+git clean -f	deletes the untracked files. Warning! You don't want to delete something useful but untracked 
+(or not tracked yet)
+
+git config --list --local	shows settings for the project/repo
+git config --list --global	shows settings common to all your projects/repos
+git config --list --system	shows settings common to all users of the computer
+git config --global user.name yourname	to set up your name, which is associated to your commits for every project
+git config --local email.name yourname@aquaholics.com	to set up associated email to this specific project
+(for other projects you prefer to use a different email address)
+
+In the .gitignore file, in the repo main folder, you can put the files you want Git to ignore
+test.py	would ignore test.py file
+*.pdf	would ignore all pdfs
+backup	would ignore the directory backup and all the files in it
+
+
+git branch	list all branches in the repository, current marked with *
+git diff branch1..branch2	shows difference between two branches of the repo
+git checkout branch1	to switch to branch1
+git checkout -b newbranch	creates newbranch, a copy of current branch (e.g. master), and switches to newbranch
+git merge sourcebranch destinationbranch	to merge 2 branches
+ What is new in source is transferred to destination
+ Same (corresponding) line modified in both branches since branching is a conflict, you have to fix to merge
+git status	to see files where there are conflicts (marked as  both modified:)
+nano filename	to manually fix each of the above files (delete all the <<<, the >>> and the === lines,
+ and keep one of the two versions of the line, this should solve the conflicts)\
+
+
+
+git init project-name	to create a repository named project-name
+(remember: DO NOT EVER create a repository inside another repository!)
+git init	to turn the current directory into a repository
+(because you may start working in your computer and then would like to turn your work up to then into a repo)
+(however, the files in the current directory have all to be added to the repository!)
+
+git remote -v	lists remotes (e.g. URL of the repo)
+git remote add remotename URL/path	to add URL or path as a remote to current repo, with the name remotename
+git remote rm remotename	to remove remotename from list of remotes
+(remember that usually you only have one remote in github, so no need to worry about multiple remotes)
+git pull remotename branchname	to pull from branchname in the remotename
+git push remotename branchname	to push to branchname in the remotename
+
