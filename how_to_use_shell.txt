@@ -1,0 +1,77 @@
+CTRL+C			to quit a program (when it seems to never end)
+
+ 
+ls			shows content of current directory
+ls foldername		shows content of foldername directory
+ls -R foldername	shows content of foldername directory, included files nested inside 
+ls -F foldername	shows content printing / next to folders, * next to executables
+
+
+
+cd foldername		move to foldername directory
+cd ..			move to parent directory
+cd ~			move to home directory
+
+cp file1 file2		creates a copy of file1 named file2 (overwrites file2 if it exists)
+cp file1 foldername	creates a copy of file1 into foldername (folder must be existing)
+
+mv file1 foldername	moves file1 into foldername
+mv file1 file2		renames file1 as file2 (cut and paste in the same folder = rename)
+
+rm file1		removes file1 (there is no trash, it is removed forever)
+rmdir foldername	deletes foldername directory, which must be empty
+mkdir foldername	creates foldername directory
+
+
+cat file1.txt		prints the content of file1 (text file) on the screen
+less file1.txt file2.txt	prints files one after another
+	spacebar to scroll down
+	:n to move to next file
+	:p to move to previous file
+
+man command		shows command MANual, instructions, how to use it
+ (use cat commands to scroll down)
+	:q to exit cat
+
+head file1.txt		prints the first 10 lines in file1
+head -n 5 file1.txt	prints the first 5 lines in file1
+head -n +5 file1.txt	prints file1 starting from line 5
+head -n 5 file1.csv > file1_top5.csv	prints first 5 lines to a new file
+
+cut -f 1-4,6 -d , file1.csv	prints fields/columns 1 2 3 4 6 of the csv, separator is comma
+cut -f 2 -d , file1.csv | head -n 2	selects field 2 AND prints first 2 rows
+cut -f 2 -d , file1.csv | grep -v Year	selects field 2 AND prints rows w/o word Year
+
+wc -c -w -l	counts the number of characters / words / lines
+
+
+wildcards
+*.txt			means all the file with txt format
+201*.txt		means all the txt file containing the string "201" in the filename
+201?.txt		means all the txt files with 201 and a character (but not 2012Jan.txt)
+data_19[89][0-9]	means data for years from 1980 to 1999, but not 1979, because 7 not in []
+{*.csv, *.txt}		means any csv or txt file
+
+sort words		sorts words in alphabetical order, A to Z
+sort -r words		sorts in reversed alphabetical order, Z to A
+sort -n numbers		sorts in ascending numerical order
+uniq			removes duplicates in adjacent lines (so first sort, then uniq)
+uniq -c			also prints the number of duplicates for each unique entry
+
+set			list environmental variables
+echo HOME		prints the name of environmental variable --> HOME
+echo $HOME		prints the value of environmental variable --> the actual home folder
+
+var1=filename.csv	assign a file to variable var1
+head $var1		prints first lines of the value of var1 ($ is important)
+
+
+bash exec1.sh		executes the script 
+
+nano editor
+CTRL+K	delete a line
+CTRL+U	undo delete a line
+CTRL+O	save file
+CTRL+X	exit nano
+
+
