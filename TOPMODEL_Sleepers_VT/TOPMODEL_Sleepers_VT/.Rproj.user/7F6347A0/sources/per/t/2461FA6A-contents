@@ -1,0 +1,164 @@
+library(readxl)
+library(topmodel)
+library(Hmisc)
+library(tiff)
+library(raster)
+library(rgdal)
+
+raster<-'w_3_DEM.tif'
+demVT <-raster(raster)
+plot(demVT)
+
+demVT
+
+demVT <-as.matrix(demVT)
+is.na(demVT)
+sum(is.na(demVT))
+length(is.na(demVT))
+plot(demVT)
+############################Topo Analysis#############################
+
+sleepers_topidx<-topidx(demVT, 10)$atb
+sleepers_topidx_class<-make.classes(hubbard_topidx, 8)
+sleepers_topidx_class
+plot(sleepers_topidx_class)
+
+hub3_2012_may_dec<-read.csv("May_Dec_2012_hub3.csv")
+hub3_may_dec_rain<-hub3_2012_may_dec$Precip_m
+hub3_may_dec_flow<-hub3_2012_may_dec$streamflow_ms
+hub3_may_dec_ETp<-hub3_2012_may_dec$ET_mday
+
+k<-10
+sleepers_delay_flowlength<-flowlength(demVT)*10
+sleepers_delay_class<-make.classes(sleepers_delay_flowlength,k)
+sleepers_delay_class
+plot(sleepers_delay_class)
+sleepers_delay_classorder<- sleepers_delay_class[k:1,]
+sleepers_delay_classorder
+sleepers_delay_classorder[,2] <- c(0, cumsum(sleepers_delay_classorder[1:(k-1),2]))
+sleepers_delay_classorder
+
+################Assigning Specific Parameters#######################
+n <- 1
+
+qs0 <- runif(n, min = 0.00002, max = 0.00002)
+lnTe <- runif(n, min = -1.8, max = -1.8)
+m <- runif(n, min = 0.6, max = 0.6)
+Sr0 <- runif(n, min = 1, max = 1)
+Srmax <- runif(n, min = 0.02, max = 0.02)
+td <- runif(n, min = 0.3, max = 0.3)
+vch <- runif(n, min = 100, max = 100)
+vr <- runif(n, min = 500, max = 500)
+k0 <- runif(n, min = 0.1487, max = 0.1487)
+CD <- runif(n, min = 0.428, max = 0.428)
+dt <- 24
+
+parameters <- cbind(qs0,lnTe,m,Sr0,Srmax,td,vch,vr,k0,CD,dt)
+
+#######################Hub3 2012 Model Run######################
+
+sleep_sim<-topmodel(parameters, sleepers_topidx_class, sleepers_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp, TRUE)
+
+Q<-sleep_sim$Q
+qo<-sleep_sim$qo
+qs<-sleep_sim$qs
+S<-sleep_sim$S
+fex<-sleep_sim$fex
+
+plot(hub3_may_dec_flow, type='l', main="2017 Sleeper's Creek", xlab="Hours", ylab="Normalized Flow")
+plot(Q, type='l', main="2017 Sleeper's Creek", xlab="Hours", ylab="Normalized Flow")
+lines(hub3_flow, col='blue')
+legend("topright", legend=c("modeled", "observed"),
+       col=c("black", "blue"), lty=1, cex=0.9)
+
+lines(hub3_flow, col='blue')
+lines(Q, col='blue')
+lines(Q, col='red')
+lines(Q, col='green')
+lines(Q-qs, col='red')
+
+NSeff(hub3_may_dec_flow, Q)
+
+#################Monte Carlo Simulation#########################
+
+n <- 5000
+
+qs0 <- runif(n, min = 0, max = 0.00003)
+lnTe <- runif(n, min = -2, max = -0.5)
+m <- runif(n, min = 0.3, max = 1)
+Sr0 <- runif(n, min = 0.005, max = 0.2)
+Srmax <- runif(n, min = 0.1, max = 1)
+td <- runif(n, min = 0, max = 0.5)
+vch <- runif(n, min = 500, max = 2000)
+vr <- runif(n, min = 500, max = 2000)
+k0 <- runif(n, min = 0.05, max = 0.2)
+CD <- runif(n, min = 0, max = 10)
+dt <- 24
+
+parameters <- cbind(qs0,lnTe,m,Sr0,Srmax,td,vch,vr,k0,CD,dt)
+
+sleep_NS<-topmodel(parameters, sleepers_topidx_class, sleepers_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp, Qobs=hub3_may_dec_flow)
+max(sleep_NS)
+min(sleep_NS)
+
+#############################stuff for hydroinformatics############################
+library(dplyr)
+library(hydroGOF)
+hydroGOF::
+  
+  
+  combined_table<- cbind(parameters, hub3_NS)
+write.csv(combined_table, "C:/Users/Stefany Baron/Documents/GitHub/Aquaholics_Anonymous/TOPMODEL_Hubbard/Table1_hydroinfo.csv")
+hub3_5000_flows<-topmodel(parameters, hubbard_topidx_class, hubbard_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp)
+hub3_5000_flows_transposed<-t(hub3_5000_flows)
+write.csv(hub3_5000_flows_transposed, "C:/Users/Stefany Baron/Documents/GitHub/Aquaholics_Anonymous/TOPMODEL_Hubbard/Table3_hydroinfo.csv")
+
+parameters_kyla<-read.csv("params_from_kyla.csv")
+param_kyla<- as.matrix.data.frame(parameters_kyla)
+
+hub3_NS<-topmodel(param_kyla, hubbard_topidx_class, hubbard_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp, Qobs=hub3_may_dec_flow)
+max(hub3_NS)
+min(hub3_NS)
+
+hub3_22000_flows<-topmodel(param_kyla, hubbard_topidx_class, hubbard_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp)
+write.csv(hub3_22000_flows, "C:/Users/Stefany Baron/Documents/GitHub/Aquaholics_Anonymous/TOPMODEL_Hubbard/hub3_22000_flows.csv")
+write.csv(hub3_NS, "C:/Users/Stefany Baron/Documents/GitHub/Aquaholics_Anonymous/TOPMODEL_Hubbard/hub3_NS.csv" )
+
+##############visualizing parameters with NS#############################
+plot(qs0, sleep_NS)
+plot(lnTe, sleep_NS, main="NSE vs lnTe for 5000 simulations", ylab = "NSE")
+plot(m, sleep_NS, main="NSE vs m for 5000 simulations", ylab="NSE")
+plot(Sr0, sleep_NS)
+plot(Srmax, sleep_NS)
+plot(td, sleep_NS)
+plot(vch, sleep_NS)
+plot(vr, sleep_NS)
+plot(k0, sleep_NS)
+plot(CD, sleep_NS)
+
+####################Glue Sensititvty Analysis############################
+parameters_glue<- parameters[hub3_NS > 0.2,]
+NS_glue <- hub3_NS[hub3_NS > 0.2]
+
+Qsim <- topmodel(parameters_glue, hubbard_topidx_class, hubbard_delay_classorder, hub3_may_dec_rain, hub3_may_dec_ETp)
+hist(Qsim[1,])
+
+weights <- hub3_NS - 0.2
+weights <- weights / sum(weights)
+
+limits <- apply(Qsim, 1, "wtd.quantile", weights = weights,
+                probs = c(0.05,0.95), normwt=T)
+
+plot(limits[2,], type="l")
+points(limits[1,], type="l")
+points(hub3_may_dec_flow, col="red")
+
+outside <- (hub3_may_dec_flow > limits[2,]) | (hub3_may_dec_flow < limits[1,])
+summary(outside)
+
+mean(limits[2,] - limits[1,]) / mean(hub3_may_dec_flow, na.rm=T)
+
+###############################Ishrat##########################
+table_glue<- cbind(parameters_glue, NS_glue)
+table_glue_frame<-as.data.frame(table_glue)
+hist(table_glue_frame$m)
