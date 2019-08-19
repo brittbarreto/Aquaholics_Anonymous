@@ -24,7 +24,7 @@ git rm --cached filename	to remove a file only from repo, NOT from your computer
 git rm -r directory	to remove a folder (only difference with file is -r; you can use --cached -r)	
 
 
-git commit -A -m "write your message here"   to commit (save) your changes in the staging area
+git commit -m "write your message here"   to commit (save) your changes in the staging area
 git commit --amend - m "new message"	to overwrite the original message, if you have second thought
 git commit 	without -m for message starts a text editor. Where you can write a longer than one-line message!
 (Using text editor, like nano or vim, can be a nightmare. Please always add message with -m)
