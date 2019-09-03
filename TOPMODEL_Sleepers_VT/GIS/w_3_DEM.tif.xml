@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20190717</CreaDate><CreaTime>17352300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\ExtractByMask" Date="20190717" Time="173523">ExtractByMask big_sleepers_DEM.tif w_3_projected "C:\Users\Stefany Baron\Documents\GitHub\Aquaholics_Anonymous\TOPMODEL_Sleepers_VT\GIS stuff\w_3_DEM.tif"</Process></lineage></DataProperties></Esri></metadata>
