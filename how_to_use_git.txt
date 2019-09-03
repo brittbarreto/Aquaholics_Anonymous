@@ -15,7 +15,7 @@ git status   	to know what you have to do
 
 git add filename	add filename, which you modified, to the staging area
 git add -a   		to add (all) new files to the staging area
-git add pathofyourfile	to add a specific file/path
+git add foldername/	to add a specific folder/path (add the slash at the end to add the folder content)
 (if you don't add a file, it will be untracked, git does not see it)
 if you add (stage) a file by mistake, you can unstage with 	git reset HEAD
 
