@@ -35,7 +35,7 @@ git push     to push the changes to the repo
 
 git checkout -- filename	undo changes to filename that are not staged yet (so not even added)
 git reset HEAD filename		this is for unstaging filename after it was staged/added
-(to do undo something already staged, first unstage with reset, then undo with checkout)\
+(to do undo something already staged, first unstage with reset, then undo with checkout)
 git checkout hash3 filename	restore filename to previous version with hash hash3
 (btw, this restoring to a previous version becomes a new version, does not delete all the versions after that)
 git reset HEAD directory	to unstage all changes to files in directory
